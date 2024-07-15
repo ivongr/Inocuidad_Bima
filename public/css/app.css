@@ -1,0 +1,114 @@
+.sidebar {
+    width: 2cm;
+  }
+  .gris-fondo {
+    background-color: #f0f0f0; /* Cambia el color de fondo a gris */
+}
+
+/* Estilos para el btn de la tabla horas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+.btn-beige {
+color: #fff;
+background-color:  #538DCC; /* Beige */
+border-color:  #538DCC; /* Beige */
+}
+
+.btn-beige:hover {
+    background-color:  #538DCC; /* Beige más claro al pasar el mouse */
+    border-color:  #538DCC; /* Beige más claro al pasar el mouse */
+}
+    /* Estilos para la tabla */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+    .btn-beige {
+color: #fff;
+background-color:  #538DCC; /* Beige */
+border-color:  #538DCC; /* Beige */
+}
+
+.btn-beige:hover {
+background-color:  #538DCC; /* Beige más claro al pasar el mouse */
+border-color:  #538DCC; /* Beige más claro al pasar el mouse */
+}
+
+#buscar {
+position: sticky;
+top: 10px;
+}
+
+/*SPINNER*/
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.loader::after {
+    content: url('spinner/mini.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border: 15px solid #ddd;
+
+    border-top-color: #005208;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+.loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px !important; /* Ancho de la imagen */
+    height: 25px !important; /* Alto de la imagen */
+    z-index: 99999;
+}
+
+
+
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+/* En resources/css/app.css */
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.min.css';
